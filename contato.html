@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simplicity</title>
+    <title>Contato - Simplicity</title>
+
     <link
       rel="shortcut icon"
       href="imagens/favicon.png"
@@ -22,6 +23,7 @@
 
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
+
   <body>
     <header class="topo">
       <div class="limitador">
@@ -54,7 +56,7 @@
           <u>obrigatórios</u>.
         </p>
 
-        <form action="" method="post">
+        <form autocomplete="off" action="" method="post">
           <div>
             <label for="nome">Nome:</label>
             <input
@@ -95,22 +97,18 @@
               <button id="buscar">Buscar</button>
             </div>
           </div>
-
           <div class="campos-restantes">
             <label for="endereco">Endereço:</label>
             <input type="text" id="endereco" name="endereco" size="30" />
           </div>
-
           <div class="campos-restantes">
             <label for="bairro">Bairro:</label>
             <input type="text" id="bairro" name="bairro" />
           </div>
-
           <div class="campos-restantes">
             <label for="cidade">Cidade:</label>
             <input type="text" id="cidade" name="cidade" />
           </div>
-
           <div class="campos-restantes">
             <label for="estado">Estado:</label>
             <input type="text" id="estado" name="estado" />
@@ -146,7 +144,6 @@
               rows="10"
             ></textarea>
           </div>
-
           <button type="submit">Enviar dados</button>
         </form>
       </article>
@@ -158,7 +155,10 @@
         <time>2024</time>
       </p>
     </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
 
     <script src="js/menu.js"></script>
+    <script src="js/contato.js"></script>
   </body>
 </html>

@@ -1,11 +1,24 @@
-const btnMenu = document.querySelector(".titulo-menu a");
-const listaMenu = document.querySelector(".links-menu");
+// Selecionando o link com a palavra Menu
+const botaoMenu = document.querySelector(".titulo-menu a");
 
-btnMenu.addEventListener("click", (event) => {
-  event.preventDefault();
-  listaMenu.classList.toggle("aberto");
+// Selecionando a lista de links do menu
+const listaDeLinks = document.querySelector(".links-menu");
 
-  listaMenu.classList.contains("aberto")
-    ? (btnMenu.innerHTML = "Fechar X")
-    : (btnMenu.innerHTML = "Menu &equiv;");
+// Ouvinte de Evento para o click no botão menu
+botaoMenu.addEventListener("click", function( event ){
+    /* Anulando o comportamento padrão de recarregar a 
+    página através de um link */
+    event.preventDefault();
+
+    /* Abrimos/Fechamos a lista de links usando o toggle na classe aberto */
+    listaDeLinks.classList.toggle("aberto");
+
+    if(listaDeLinks.classList.contains("aberto")){
+        botaoMenu.innerHTML = "Fechar &times;";
+    } else {
+        botaoMenu.innerHTML = "Menu &equiv;";
+    }
 });
+
+
+
